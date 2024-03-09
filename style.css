@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:black;
+}
+
+.main {
+    background-image: url("Background.jpg");
+    background-position: left center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+
+.main .box {
+    height: 708px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+
+    background-color:rgba(32, 32, 32, 0.877);
+}
+
+nav {
+    max-width: 75vw;
+    justify-content:space-between;
+    margin-left: 190px;
+    display: flex;
+    align-items:flex-start;
+    bottom: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    top:  26px;
+    right: 30px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    color: white;   
+    padding: 7px;
+    border-radius: 10px;
+    top: 35px;
+    width: 80px;
+    border-style: hidden;
+
+}
+
+
+.maintext {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(120% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    color: white;
+    position: relative;
+    gap: 25px;
+    padding: 0 30px;
+}
+
+.maintext> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+
+.maintext> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.maintext> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.text-buttons input{
+    background-color: rgba(8, 8, 8, 0.603);
+    padding: 18px;
+    width: 350px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+.text-buttons button{
+    padding: 15px;
+    font-style: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    color:white;
+    background-color: rgb(204, 6, 6);
+    border-style: hidden;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bolder;
+    top: 136px;
+
+}
+.midImg {
+    position: relative;
+}
+
+.midImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+section.first>div {
+    font-style: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.mid>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.mid>div :nth-child(2) {
+    font-size: 24px;
+}
+.midImg video{
+    position: relative;
+    bottom: 81vh;
+    width: 40vw;
+     height: 100vh;
+}
