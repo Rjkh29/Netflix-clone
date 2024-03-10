@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0vh;
+    margin: 0vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -8,12 +8,13 @@ body {
     background-color: black;
 }
 
-.main {
+.main 
+{
     background-image: url("Background.jpg");
     background-position: left center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 165vh;
+    height: 105vh;
     position: relative;
 }
 
@@ -27,34 +28,37 @@ body {
 }
 
 nav {
-    max-width: 75vw;
+    max-width: 81vw;
     justify-content: space-between;
-    margin-left: 190px;
+    margin-left: 6vw;
     display: flex;
     align-items: flex-start;
 }
 
 nav img {
-    width: 150px;
+    width: 13vw;
 }
 
 nav button {
-    color: white;
-    padding: 7px;
-    border-radius: 10px;
-    width: 80px;
-    border-style: hidden;
+	color: rgb(252, 252, 252);
+	padding: 7px;
+	border-radius: 10px;
+	width: 80px;
+	border-style: hidden;
+	background-color: #ff1616;
 }
 
 .maintext {
-    height: calc(120% - 90px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    gap: 25px;
-    padding: 0 30px;
+	height: calc(110% - 90px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	gap: 25px;
+	padding: 0 30px;
+	z-index: 0;
+	position: inherit;
 }
 
 .maintext> :nth-child(1) {
@@ -81,48 +85,55 @@ nav button {
 }
 
 .text-buttons button {
-    padding: 15px;
-    font-size: 24px;
-    width: 17vw;
-    color: white;
-    background-color: rgb(204, 6, 6);
-    border-style: hidden;
-    border-radius: 5px;
-    font-weight: bold;
+	padding: 15px;
+	font-size: 24px;
+	width: 22vw;
+	color: white;
+	background-color: rgb(204, 6, 6);
+	border-style: hidden;
+	border-radius: 5px;
+	max-width: 29vw;
 }
-.mid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 70vw;
-    margin: auto;
-    color: white;
-    font-size: 48px;
-    font-weight: bolder;
-    top: 136px;
+@media (max-width:600px)
+{
+    .text-buttons{
+    display:contents;
+    width: 35vw;
+    }
 }
-
-section.mid>div :nth-child(1) {
-    font-size: 48px;
-    font-weight: bolder;
+.curved-border {
+	height: 4vw;
+	background: linear-gradient(to top, #032857, #0B0B0B);
+	border-top: 1vh solid #000;
+	border-bottom: 1vh solid #ce193f;
+	border-bottom-left-radius: 180% 32vh;
+	border-bottom-right-radius: 180% 32vh;
+	width: 100%;
+	position: relative;
+	transform: rotateX(180deg);
+	bottom: 12vh;
 }
-
-section.mid>div :nth-child(2) {
-    font-size: 24px;
+.b-box {
+	box-sizing: border-box;
+	height: 22vh;
+	width: 112vh;
+	background-color: #4f044e;
+	display: flex;
+	margin-left: 16vw;
+	border-radius: 1vw;
+	color: white;
+	flex-direction: column;
 }
-
-.midImg {
-    display: flex;
-    align-items: center;
+.b-box > :nth-child(1) {
+	font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
+	font-size: 32px;
+	font-weight: bolder;
+	margin-left: 2vw;
+	margin-bottom: 2vh;
+	margin-top: 4vh;
 }
-
-.midImg img {
-    width: 30vw;
-}
-
-.midImg video {
-    width: 20vw;
-    height: 100%;
-    object-fit: cover;
-    margin-left: 3vw; /* Adjust the margin as needed */
+.b-box > :nth-child(2) {
+	font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
+	font-size: 18px;
+	margin-left: 2vw;
 }
