@@ -14,14 +14,14 @@ body {
     background-position: left center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 105vh;
+    height: 113vh;
     position: relative;
 }
 
 .main .box {
-    height: 168vh;
+	height: 110vh;
     width: 100%;
-    opacity: 0.4;
+	opacity: 0.9;
     position: absolute;
     top: 0;
     background-color: rgba(32, 32, 32, 0.877);
@@ -32,24 +32,29 @@ nav {
     justify-content: space-between;
     margin-left: 6vw;
     display: flex;
-    align-items: flex-start;
+	align-items: end;
+	z-index: 1
 }
 
 nav img {
-    width: 13vw;
+	width: 11vw;
+	z-index: 1;
+	position:relative ;
 }
 
 nav button {
 	color: rgb(252, 252, 252);
 	padding: 7px;
-	border-radius: 10px;
-	width: 80px;
+	border-radius: 6px;
+	width: 5vw;
 	border-style: hidden;
 	background-color: #ff1616;
-}
+	z-index: 1;
+	position: relative;
+} 	
 
 .maintext {
-	height: calc(110% - 90px);
+	height: calc(110% - 16vh);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -57,7 +62,7 @@ nav button {
 	color: white;
 	gap: 25px;
 	padding: 0 30px;
-	z-index: 0;
+	z-index: 1;
 	position: inherit;
 }
 
@@ -77,7 +82,7 @@ nav button {
 .text-buttons input {
     background-color: rgba(8, 8, 8, 0.603);
     padding: 18px;
-    width: 70%;
+    width: 70vw;
     max-width: 350px;
     border-radius: 5px;
     color: white;
@@ -86,15 +91,15 @@ nav button {
 
 .text-buttons button {
 	padding: 15px;
-	font-size: 24px;
-	width: 22vw;
+	font-size: 22px;
+	min-width: 13vw;
 	color: white;
 	background-color: rgb(204, 6, 6);
 	border-style: hidden;
 	border-radius: 5px;
-	max-width: 29vw;
+	max-width: 36vw;
 }
-@media (max-width:600px)
+@media (max-width:650px)
 {
     .text-buttons{
     display:contents;
@@ -102,9 +107,9 @@ nav button {
     }
 }
 .curved-border {
-	height: 4vw;
+	height: 7vw;
 	background: linear-gradient(to top, #032857, #0B0B0B);
-	border-top: 1vh solid #000;
+	border-top: 0vh solid #000;
 	border-bottom: 1vh solid #ce193f;
 	border-bottom-left-radius: 180% 32vh;
 	border-bottom-right-radius: 180% 32vh;
@@ -113,27 +118,36 @@ nav button {
 	transform: rotateX(180deg);
 	bottom: 12vh;
 }
-.b-box {
-	box-sizing: border-box;
+.bbox {
 	height: 22vh;
-	width: 112vh;
-	background-color: #4f044e;
+	width: 70vw;
+	background: linear-gradient(93deg, #43172b, #230a25);
 	display: flex;
-	margin-left: 16vw;
+	margin-left: 2vw;
 	border-radius: 1vw;
-	color: white;
 	flex-direction: column;
+	box-sizing: border-box;
+	transition: all 0.5s cubic-bezier(0.33, 0, 0, 1);
+	align-items: flex-start;
 }
-.b-box > :nth-child(1) {
+.bbox:hover
+{
+	transform: scale(1.1) ;
+	background: linear-gradient(93deg, #5f1b3a, #230a25);
+}
+
+.bbox > :nth-child(1) {
 	font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
 	font-size: 32px;
 	font-weight: bolder;
-	margin-left: 2vw;
-	margin-bottom: 2vh;
-	margin-top: 4vh;
+	margin-left: 1vw;
+	margin-bottom: 4vh;
+	margin-top: 6vh;
+	color: white;
 }
-.b-box > :nth-child(2) {
+.bbox > :nth-child(2) {
 	font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
 	font-size: 18px;
 	margin-left: 2vw;
+	color: white;
 }
