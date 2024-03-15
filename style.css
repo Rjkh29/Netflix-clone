@@ -99,13 +99,6 @@ nav button {
 	border-radius: 5px;
 	max-width: 36vw;
 }
-@media (max-width:650px)
-{
-    .text-buttons{
-    display:contents;
-    width: 35vw;
-    }
-}
 .curved-border {
 	height: 7vw;
 	background: linear-gradient(to top, #032857, #0B0B0B);
@@ -123,12 +116,13 @@ nav button {
 	width: 70vw;
 	background: linear-gradient(93deg, #43172b, #230a25);
 	display: flex;
-	margin-left: 2vw;
+	margin-left: 17vw;
 	border-radius: 1vw;
 	flex-direction: column;
 	box-sizing: border-box;
 	transition: all 0.5s cubic-bezier(0.33, 0, 0, 1);
-	align-items: flex-start;
+	align-items: center;
+	margin-bottom: 7vh;
 }
 .bbox:hover
 {
@@ -150,4 +144,173 @@ nav button {
 	font-size: 18px;
 	margin-left: 2vw;
 	color: white;
+}
+.d1{
+	font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
+	font-size: 18px;
+	color: white;
+	margin-left: 6vw;
+	font-weight: 500;
+}
+.section2{
+	display: flex;
+	color: rgba(255,255,255,0.7);
+	font-size: 1rem;
+	font-weight: 500;
+}
+.section2 .box1 {
+	font-family:Segoe UI, Roboto, Ubuntu, sans-serif;
+	background: linear-gradient(136deg, #1b1e40, #180e1e);
+	height: 40vh;
+	width: 18vw;
+	left: 6vw;
+	position: relative;
+	margin-top: 2vh;
+	border-radius: 16px;
+	margin-right: 2vw;
+}
+.section2 .box1 img
+{
+	height: 7vh;
+	margin-top: 11vh;
+	display: flex;
+	margin-left: 13vw;
+}
+.section2 .box2 {
+	font-family:Segoe UI, Roboto, Ubuntu, sans-serif;
+	background: linear-gradient(136deg, #1b1e40, #180e1e);
+	height: 40vh;
+	width: 18vw;
+	left: 6vw;
+	position: relative;
+	margin-top: 2vh;
+	border-radius: 16px;
+	margin-right: 2vw;
+}
+.section2 .box2 img{
+	height: 9vh;
+	margin-top: 9vh;
+	margin-left: 13vw;
+	display: flex;
+}
+.section2 .box3{
+	font-family:Segoe UI, Roboto, Ubuntu, sans-serif;
+	background: linear-gradient(136deg, #1b1e40, #180e1e);
+	height: 40vh;
+	width: 18vw;
+	left: 6vw;
+	position: relative;
+	margin-top: 2vh;
+	border-radius: 16px;
+	margin-right: 2vw;
+}
+.section2 .box3 img{
+	width: 16vh;
+	display: flex;
+	margin-left: 10vw;
+	margin-top: 9vh;
+	height: 15vh;
+}
+.section2 .box4 {
+	font-family:Segoe UI, Roboto, Ubuntu, sans-serif;
+	background: linear-gradient(136deg, #1b1e40, #180e1e);
+	height: 40vh;
+	width: 18vw;
+	left: 6vw;
+	position: relative;
+	margin-top: 2vh;
+	border-radius: 16px;
+	margin-right: 2vw;
+}
+.section2 .box4 img{
+	height: 10vh;
+	display: flex;
+	margin-top: 8vh;
+	margin-left: 12vw;
+}
+.section3 div h2{
+	color: white;
+	margin-top: 7vh;
+	margin-left: 6vw;
+}
+.section3 .buttons{
+	margin-left: 2vw;
+	display: flex;
+	flex-direction: column;
+	width: 78vw;
+	gap: 1vw;
+	margin-top: 2vh;
+}
+.section3 .buttons button {
+	margin-left: 6vw;
+	display: flex;
+	flex-direction: column;
+	width: 67vw;
+	gap: 1vw;
+	margin-top: 2vh;
+	padding: 5vh;
+	text-align: inherit;
+	background-color: #2d2d2d;
+	border: none;
+	color: white;
+}
+.section3 .buttons button:hover{
+	background-color: #464242;
+}
+.section4 p1
+{
+	color: white;
+	margin-top: 5vh;
+	display: flex;
+	margin-bottom: 3vh;
+	margin-left: 8vw;
+}
+.section4 div{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+	width: 100%;
+}
+.section4 div input{
+	background-color: rgba(8, 8, 8, 0.603);
+    padding: 18px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+	width: 67vw;
+	max-width: 95vw;
+}
+.section4 div button{
+	padding: 15px;
+	font-size: 22px;
+	min-width: 13vw;
+	color: white;
+	background-color: rgb(204, 6, 6);
+	border-style: hidden;
+	border-radius: 5px;
+	max-width: 36vw;
+}
+@media (max-width:650px)
+{
+	.text-buttons{
+	display:contents;
+	width: 35vw;
+	}
+	.section4 div{
+	display:contents;
+	width: 35vw;
+ 	}
+	.section3 .buttons{
+
+	}
+	.section2 box{
+
+	}
+}
+@media(max-width:960px)
+{
+	.section2{
+
+	}
 }
